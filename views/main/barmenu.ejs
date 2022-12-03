@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="chtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- nav bar links -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    <title>Document</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+    @font-face {
+        font-family: 'Calluna-Regular';
+        src: url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.eot');
+        src: url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.eot?#iefix') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.ttf') format('truetype');
+    }
+    
+    .background {
+        background-color: black;
+    }
+    
+    .chtml {
+        margin-top: 5em;
+        padding: 0;
+        border: 0 none;
+        position: relative;
+    }
+    
+    .chtml {
+        color: black;
+        margin: 1rem auto;
+        border: 4px solid;
+        margin-top: 5em;
+        width: calc(100% - 36px);
+        max-width: 800px;
+        padding: 16px;
+        font-family: calluna-regular, 'Cinzel Decorative', serif;
+        font-size: 1rem;
+    }
+    
+    .bbody {
+        width: 100%;
+        border: 4px solid;
+        border-radius: 10px;
+        border-color: black;
+    }
+    
+    .chtml:before,
+    .chtml:after,
+    .bbody:before,
+    .bbody:after {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        border: 4px solid;
+    }
+    
+    .chtml:before {
+        top: -4px;
+        left: -4px;
+        border-color: red whitesmoke red whitesmoke;
+        border-radius: 0 0 5px 0;
+    }
+    
+    .chtml:after {
+        top: -4px;
+        right: -4px;
+        border-color: red whitesmoke red whitesmoke;
+        border-radius: 0 0 0 5px;
+    }
+    
+    .bbody:before {
+        bottom: -24px;
+        left: -24px;
+        border-color: red whitesmoke red whitesmoke;
+        border-radius: 0 5px 0 0;
+    }
+    
+    .bbody:after {
+        bottom: -24px;
+        right: -24px;
+        border-color: red whitesmoke red whitesmoke;
+        border-radius: 5px 0 0 0;
+    }
+    
+    .Ah1 {
+        text-align: center;
+        font-size: 3rem;
+        color: red;
+        font-family: 'Cinzel Decorative', serif;
+        -webkit-font-feature-settings: "clig", "dlig", "hlig", "liga", "swsh", "onum";
+        -moz-font-feature-settings: "clig", "dlig", "hlig", "liga", "swsh", "onum";
+        font-feature-settings: "clig", "dlig", "hlig", "liga", "swsh";
+        padding-top: 1rem;
+    }
+    
+    article p:nth-of-type(1) {
+        padding-left: 1rem;
+        color: black;
+        margin-bottom: 2rem;
+        line-height: 1.3;
+        font-size: 1.9rem;
+    }
+    
+    article h2+p:first-letter {
+        background: black;
+        font-family: 'Cinzel Decorative', serif;
+        float: left;
+        font-size: 7rem;
+        color: seagreen;
+        line-height: 100%;
+        margin-top: -5rem;
+        margin-left: -7rem;
+        border-radius: 50%;
+        text-shadow: 1px 1px 0 whitesmoke;
+        box-shadow: 0 0 0 5px #e5e5e5;
+    }
+    
+    .p1:before {
+        color: seagreen;
+        font-size: 3rem;
+        position: absolute;
+        top: -4.8rem;
+        left: 50%;
+        opacity: .6;
+    }
+    
+    .ulli {
+        color: seagreen;
+        font-family: cursive;
+        font-size: 15px;
+    }
+    
+    .allboxsize {
+        margin-left: 50em;
+        margin-bottom: -5em;
+        height: 5em;
+    }
+    
+    .imgleftside {
+        margin-top: 2px;
+        margin-left: 40px;
+        border-radius: 10px;
+        border-style: solid;
+    }
+    
+    .imgrightside {
+        margin-top: -5em;
+        margin-left: -70em;
+        border-radius: 10px;
+        border-style: solid;
+    }
+</style>
+
+
+<body class="bbody ">
+
+
+    <!-- main body starts -->
+
+    <%-include("../partials/header") %>
+        <p class="allboxsize">
+            <img src="/assets/images/image5.jpg" class="imgleftside"> &nbsp; &nbsp;
+            <img src="/assets/images/image11.jpg" class="imgleftside"> &nbsp; &nbsp;
+            <img src="/assets/images/image3.jpg" class="imgleftside"> &nbsp; &nbsp;
+
+        </p>
+
+        <h1 class="Ah1">HARD DRINKS<span> & </span>BEVERAGES
+
+        </h1>
+        <p class="allboxsize">
+            <img src="/assets/images/image20.jpg" class="imgrightside"> <br>
+            <img src="/assets/images/image7.jpg" class="imgrightside" style="margin-top: 4em;"> <br>
+            <img src="/assets/images/image1.jpg" class="imgrightside" style="margin-top: 4em;">
+        </p>
+
+        <article>
+            <h2 style="color:seagreen; font-family:sans-serif;">&nbsp; &nbsp;ENU</h2>
+            <p>&nbsp;M<span class='doble'></span></p>
+
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 lg-6 md-6">
+                        <p class="p1 ulli"><u> BEER</u></p>
+                        <ul class="ulli">
+                            <li>STELLA ARTONS</li>
+                            <li>FAT TIRE</li>
+                            <li>STONE IPA</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 lg-6 md-6">
+                        <p class="p1 ulli"><u> LIQUOR</u></p>
+                        <ul class="ulli">
+                            <li>TANGUERAY GIN</li>
+                            <li>MARKER'S MARK BOURBON</li>
+                            <li>JOHNNIE WALKER BLACK SCOTCH</li>
+                            <li>BACARDI GOLD RUM</li>
+                            <li>TITO'S HANDCRAFTED VODKA</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 lg-6 md-6">
+                        <p class="p1 ulli"><u>WINE</u></p>
+                        <ul class="ulli">
+                            <li>LA MARKA PROCECCO</li>
+                            <li>TORMARECCA NEPRICA</li>
+                            <li>KIM CRAWFORD</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 lg-6 md-6">
+                        <p class="p1 ulli"><u>MIXERS</u></p>
+                        <ul class="ulli">
+                            <li>COKE</li>
+                            <li>DIET COKE</li>
+                            <li>SPRITE</li>
+                            <li>GINGER ALE</li>
+                            <li>CLUB SODA</li>
+                            <li>TONIC</li>
+                            <li>ORANGE JUICE</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </article>
+        <%-include("../partials/footer") %>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+            <!-- java script for navbar -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+</body>
+
+</html>

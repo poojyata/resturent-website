@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<!-- <style>
+    @media screen and (min-width: 2513px) {
+        .column {
+            flex: 90%;
+        }
+    }
+    
+    @media screen and (max-width: 1198px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+</style> -->
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .bccolor {
+        background-color: black;
+    }
+    
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    /* Create four equal columns that sits next to each other */
+    
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body class="bccolor">
+
+    <%-include("../partials/header") %>
+        <!-- Photo Grid -->
+        <div class="container" style="background-color: black;">
+            <div class="row">
+                <div class="column">
+                    <img src="/assets/images/image1.jpg" style="width:100%">
+                    <img src="/assets/images/image2.jpg" style="width:100%">
+                    <img src="/assets/images/image3.jpg" style="width:100%">
+                    <img src="/assets/images/image4.jpg" style="width:100%">
+                    <img src="/assets/images/image5.jpg" style="width:100%">
+                    <img src="/assets/images/image10.jpg" style="width:100%">
+                    <img src="/assets/images/image11.jpg" style="width:100%">
+                </div>
+
+                <div class="column">
+                    <img src="/assets/images/image40.jpg" style="width:100%">
+                    <img src="/assets/images/image12.jpg" style="width:100%">
+                    <img src="/assets/images/image6.jpg" style="width:100%">
+                    <img src="/assets/images/image7.jpg" style="width:100%">
+                    <img src="/assets/images/image19.jpg" style="width:100%">
+                    <img src="/assets/images/image20.jpg" style="width:100%">
+
+                    <img src="/assets/images/image13.jpg" style="width:100%">
+                </div>
+
+                <div class="column">
+                    <img src="/assets/images/image36.jpg" style="width:100%">
+                    <img src="/assets/images/image43.jpg" style="width:100%">
+                    <img src="/assets/images/image37.jpg" style="width:100%">
+                    <img src="/assets/images/image26.jpg" style="width:100%">
+                    <!-- <img src="/assets/images/image27.jpg" style="width:100%"> -->
+                    <img src="/assets/images/image39.jpg" style="width:100%">
+
+                </div>
+
+                <div class="column">
+                    <img src="/assets/images/image9.jpg" style="width:100%">
+                    <img src="/assets/images/image41.jpg" style="width:100%">
+                    <!-- <img src="/assets/images/image31.jpg" style="width:100%"> -->
+                    <img src="/assets/images/image32.jpg" style="width:100%">
+                    <img src="/assets/images/image33.jpg" style="width:100%">
+                    <img src="/assets/images/image34.jpg" style="width:100%">
+                    <img src="/assets/images/image35.jpg" style="width:100%">
+                    <!-- <img src="/assets/images/image21.jpg" style="width:100%"> -->
+                </div>
+            </div>
+        </div>
+        <!-- <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container" style="background-color:cadetblue; width:20em; height: 20em;">
+                        <ul style="list-style: none; font-size: 2em; text-align: center;">
+                            <li>DRINKS</li>
+                            <li>SNAKES</li>
+                            <li>DINNER</li>
+                            <li>SWEET DIESH</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="/assets/images/image12.jpg">
+                            </div> <br>
+                            <div class="col">
+                                <img src="/assets/images/image12.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+        <%-include("../partials/footer") %>
+            <!-- javascript of bootstrap5 -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
